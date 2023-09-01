@@ -1,13 +1,18 @@
-import { useAuth0 } from '@auth0/auth0-react'
+import { useKindeAuth } from '@kinde-oss/kinde-auth-react'
 import React from 'react'
 
 const Login = () => {
-  const { loginWithRedirect, isAuthenticated } = useAuth0();
-
+  const { login, register, isAuthenticated } = useKindeAuth();
+  
   return (
-    !isAuthenticated && (
-      <button onClick={() => loginWithRedirect()}>Log In</button>
-    )
+    <>
+      {!isAuthenticated && (
+        <div>
+          <button onClick={login}>Sign In</button>
+          <button onClick={register}>Sign Up</button>
+        </div>
+      )}
+    </>
   )
 }
 

@@ -1,9 +1,17 @@
+import { useKindeAuth } from '@kinde-oss/kinde-auth-react'
 import React from 'react'
 
 const Profile = () => {
+  const { user, isAuthenticated, isLoading } = useKindeAuth();
+  console.log(user);
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
+
   return (
-    <div>Profile</div>
-  )
+    !isLoading && isAuthenticated && <div>Hi {user.first_name} </div>
+  );
 }
 
-export default Profile
+export default Profile;

@@ -15,18 +15,6 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@auth0/auth0-react@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@auth0/auth0-react/-/auth0-react-2.2.1.tgz#f1d3ff6ea9144d8bba0597e86beb5cb1d57301cb"
-  integrity sha512-4L4FZvSqIwzVk5mwWFbWzfJ4Zq11dgS0v4KIGKro5tL9dgOnBGq+Ino/1mzexPV1LJHBkfwXG4+IaPiQNz5CGg==
-  dependencies:
-    "@auth0/auth0-spa-js" "^2.1.2"
-
-"@auth0/auth0-spa-js@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@auth0/auth0-spa-js/-/auth0-spa-js-2.1.2.tgz#2217db13ce0feb480a190ed165b36681bd48633c"
-  integrity sha512-xdA65Z/U7++Y7L9Uwh8Q8OVOs6qgFz+fb7GAzHFjpr1icO37B//xdzLXm7ZRgA19RWrsNe1nme3h896igJSvvw==
-
 "@babel/code-frame@^7.22.10", "@babel/code-frame@^7.22.5":
   version "7.22.13"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.22.13.tgz#e3c1c099402598483b7a8c46a721d1038803755e"
@@ -417,6 +405,18 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
+
+"@kinde-oss/kinde-auth-pkce-js@^3.0.16":
+  version "3.0.19"
+  resolved "https://registry.yarnpkg.com/@kinde-oss/kinde-auth-pkce-js/-/kinde-auth-pkce-js-3.0.19.tgz#ac0ac20eaf1a7dde6defe832e94e10a488cfc998"
+  integrity sha512-EbMxt+fnDhotoRR4VM+PeJMZbSr29pqreVpZNMDu4B7u5/a7CwA7/TF9WtMNY85xPSZXWO+KcKT32UQnPvFu+w==
+
+"@kinde-oss/kinde-auth-react@^3.0.19":
+  version "3.0.19"
+  resolved "https://registry.yarnpkg.com/@kinde-oss/kinde-auth-react/-/kinde-auth-react-3.0.19.tgz#25100c63c24de1274355360bf5ebff8b5683a0e1"
+  integrity sha512-VDX4NOH1rzEaN1ax0r2aZPN1KhjaBH/FxFtd3sEcq5wKwppJNc1QXhidLMe1nylUijJsEnN1oNE7Sz3snFGVQw==
+  dependencies:
+    "@kinde-oss/kinde-auth-pkce-js" "^3.0.16"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
